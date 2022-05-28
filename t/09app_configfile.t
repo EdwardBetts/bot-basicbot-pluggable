@@ -25,7 +25,7 @@ isa_ok(
 is_deeply(
     $app->module,
     [ 'Loader', 'Karma', 'Auth' ],
-    'setting modules via configfile and implcit loading of modules via settings'
+    'setting modules via configfile and implicit loading of modules via settings'
 );
 
 is_deeply(

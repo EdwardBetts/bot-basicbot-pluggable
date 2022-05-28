@@ -57,7 +57,7 @@ is( $bot->tell_indirect( 'test_bot--', 'alice' ),
     'Karma for test_bot is now 0 (pffft)', 'complaining about karming down bot' );
 
 $bot->tell_indirect('test_user++');
-test_karma( 'test_user', 0, 'user is not allowed to use positiv selfkarma' );
+test_karma( 'test_user', 0, 'user is not allowed to use positive selfkarma' );
 
 $bot->tell_indirect('test_user--');
 test_karma( 'test_user', 0, 'user is not allowed to use negative selfkarma' );
@@ -68,7 +68,7 @@ $bot->tell_indirect('test_user++');
 test_karma( 'test_user', 1, 'user is allowed to use positive selfkarma' );
 
 $bot->tell_indirect('test_user--');
-test_karma( 'test_user', 0, 'user is allowed to use negativ selfkarma' );
+test_karma( 'test_user', 0, 'user is allowed to use negative selfkarma' );
 
 is(
     $karma->help(),

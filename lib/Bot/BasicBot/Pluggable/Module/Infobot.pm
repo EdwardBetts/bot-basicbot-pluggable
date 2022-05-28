@@ -317,7 +317,7 @@ sub get_raw_factoids {
     }
     else {
 
-        # old-style tab seperated thing
+        # old-style tab separated thing
         my @strings;
         ( $is_are, @strings ) = split( /\t/, $raw );
         for my $text (@strings) {

@@ -214,7 +214,7 @@ sub chump {
 
         # catch just numbers, guess if it's a blog_id or a timestamp
         # TODO if we ever have >10^8 blog entries, this will break.
-        # Hopefuly, time() will be larger by then, and I can adjust this
+        # Hopefully, time() will be larger by then, and I can adjust this
         # number.
         } elsif ($one =~ /^\d{8,}$/) {
             return "<a href=\"".CGI::url()."?timestamp=$one\">$two</a>";

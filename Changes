@@ -35,7 +35,7 @@ Revision history for Perl extension Bot::BasicBot::Pluggable.
  - Karma plugin - match nicks with \S+, not \w+, so nicks with
    hyphens in can have karma.  GH PR-1 (bigpresh)
 
- - Better-document how said() resturn value is handled, to avoid
+ - Better-document how said() return value is handled, to avoid
    potential confusion.  GH PR-4 (bigpresh)
 
 
@@ -125,7 +125,7 @@ are welcome!
 
 0.86 2010/03/28
 
-  Thanks to Jacob Helwig for the follwoing changes:
+  Thanks to Jacob Helwig for the following changes:
 
     Join: Check for auth after checking whether we should handle
     the message at
@@ -139,7 +139,7 @@ are welcome!
 
 0.85 2010/02/13
 
-  This is the David-Precious-aka-bigpresh-release, who commited all
+  This is the David-Precious-aka-bigpresh-release, who committed all
   changes via Github. Thanks!
 
   - Join: Don't accept commands to join/part channels unless the
@@ -206,9 +206,9 @@ are welcome!
     convenience, i selected it as we'll get it through moose in any
     case.
 
-  - ChanOp.pm: New core module to handle channel managment operations
+  - ChanOp.pm: New core module to handle channel management operations
     like oping, deoping, kicking and flood control. Please take a
-    closer look at this module, it definitly needs some testing!
+    closer look at this module, it definitely needs some testing!
 
 0.83 2009/11/08
 
@@ -262,7 +262,7 @@ are welcome!
   - Seen:
     - now also reckognize joins and parts
   - Infobot:
-    - there's an user defineable http_timeout variabe that defaults to ten
+    - there's an user defineable http_timeout variable that defaults to ten
       seconds (fixes #3239)
     - settable limit on how many RSS items to return
     - just shorten entries when @entries is bigger than user_max_entries
@@ -270,7 +270,7 @@ are welcome!
     - checking the definedness of $value so you can set a variable to 0 for example
 
 0.76 2009/06/28
-  - the store paramter to B:BB:P->new() can now also be a string
+  - the store parameter to B:BB:P->new() can now also be a string
   - new config interface for modules
   - search for keywords in Infobot.pm now returns the right number of factoids
   - when deleting factoids return the right answer
@@ -285,7 +285,7 @@ are welcome!
   - added additional slash to fix #46928 (t/05infobot.t)
   - added t/03store_storable.t
   - closes #3258: instead of just overwriting the storable file it creates a tempfile and the move it
-  - Moved FakeBot to Test::Bot::BasicBot::Pluggable so that it's accessable for other Modules
+  - Moved FakeBot to Test::Bot::BasicBot::Pluggable so that it's accessible for other Modules
   - renamed infobot.t and title.t
   - only create a new table if it doesn't exists yet in Store::DBI
 
@@ -307,7 +307,7 @@ are welcome!
   - Adjusted number of tests for Test::More
   - Karma:
     - Testsuide added
-    - Listing of explainations works again (settable by num_comments)
+    - Listing of explanations works again (settable by num_comments)
     - New variable random_reasons
     - Documentation updated
 
@@ -394,7 +394,7 @@ You can chastise him for his ego at http://disobey.com/.
   - Loader now uses the standard store system.
   - Installed shell script to run B::B::P.
   - The Infobot module can now passively learn and passively answer questions
-    (without direct addressing) and you can set these options seperately.
+    (without direct addressing) and you can set these options separately.
   - The storage system is decently abstracted out, and has a
     default that does the same thing as the last one.
   - Gave the bot a default charset of utf8, because I'm a fan of utf8.
@@ -411,7 +411,7 @@ You can chastise him for his ego at http://disobey.com/.
     clearly had no idea what I was smoking at the time.
   - Decent examples in examples/, and web page copies for people who use CPAN.
   - Removed Blog and Shout modules - Blog to be spun off
-    into a seperate module, Shout was just stupid.
+    into a separate module, Shout was just stupid.
   - Support for loading modules from 'Modules' in cwd as well as main lib path.
   - The bot is a lot less case-sensitive. Still sensitive for loading
     modules, but all the help, etc commands are more friendly.
@@ -436,7 +436,7 @@ You can chastise him for his ego at http://disobey.com/.
 
 0.05 2003/06/09
   - Better documentation.
-  - Vars changable through better interface.
+  - Vars changeable through better interface.
 
 0.04 2003/03/05
   - Release coincides with Simon's release of Bot::Basicbot, version matched.

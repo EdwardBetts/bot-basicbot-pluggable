@@ -42,7 +42,7 @@ sub deop { shift->deop_op( '-o', @_ ); }
 
 sub help {
     return
-      'ChanOp commands need to be adressed in private and after authentication.'
+      'ChanOp commands need to be addressed in private and after authentication.'
       . '!op #foo | !deop #foo #bar | !kick #foo user You have been warned ';
 }
 

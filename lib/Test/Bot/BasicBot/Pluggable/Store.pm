@@ -30,7 +30,7 @@ sub store_ok {
         1, "storage namespace has one key matching ^user" );
     $test->ok( $store->unset( "test", "foo" ), "unset key" );
     $test->ok( !$store->get( 'test', 'foo' ),
-        "unset has worked, no key namned foo left" );
+        "unset has worked, no key named foo left" );
     $test->is_eq( $store->namespaces(), 'test', "return namespaces" );
 }
 
@@ -57,7 +57,7 @@ basic store_ok.
 
 =head2 store_ok
 
-This functions justs tests some basic behaviour every storage module
+This functions just tests some basic behaviour every storage module
 should provide, like store creation, get and set. You can't use it
 directly with Test::More as we hardcode the number of tests to nine
 in the moment. (Man, i'm so excited about nested tap streams in the

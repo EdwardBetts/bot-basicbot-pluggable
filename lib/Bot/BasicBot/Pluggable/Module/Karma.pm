@@ -113,7 +113,7 @@ sub maybe_add_giver {
     }
     else {
 
-        # just returning the reason string of the reason hash referenes
+        # just returning the reason string of the reason hash references
         return map { $_->{reason} } @reasons;
     }
 }
@@ -139,7 +139,7 @@ sub get_karma {
     }
     $karma = $positive - $negative;
 
-    # The subroutine references return differant values when called.
+    # The subroutine references return different values when called.
     # If they are called in scalar context, they return the overall
     # positive or negative karma, but when called in list context you
     # get an array of hash references with all non empty reasons back.

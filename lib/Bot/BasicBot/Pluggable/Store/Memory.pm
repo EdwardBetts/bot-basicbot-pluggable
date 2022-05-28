@@ -27,7 +27,7 @@ this is mainly for testing and storing data for a short time.
 This module is just a bare bone subclass of
 Bot::BasicBot::Pluggable::Store and does not implement any methods of
 its own. In a perfect world Bot::BasicBot::Pluggable::Store would just
-be a abstract base class, but it was implemented as normale in-memory
+be a abstract base class, but it was implemented as normal in-memory
 storage class. Due to Bot::BasicBot::Pluggable object creation you can
 either specify a already created storage object or a string that is
 simply appended to "Bot::BasicBot::Pluggable::Store::". So if you just
